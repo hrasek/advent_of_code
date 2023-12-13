@@ -1,4 +1,8 @@
 import regex as re
+
+# TODO: Requirements.txt
+# TODO: Rewrite the tasks to functions.
+
 file_name = 'aoc_day1_input.txt'
 #file_name = 'test.txt'
 with open(file_name, 'r') as file_txt:

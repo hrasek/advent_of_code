@@ -1,9 +1,15 @@
 import re
 file_name = 'aoc_day1_input.txt'
-with open(file_name, 'r') as file_txt:
-    content_list = file_txt.readlines()
+file_name = 'test.txt'
 res_int = 0
-for i in range(len(content_list)):
-    dig_list = re.findall('\d', content_list[i])
-    res_int += int(dig_list[0] +  dig_list[-1]) 
+
+# TODO: Automatic test of this function.
+# TODO: Black all codes.
+# TODO: Map of the progress, dictionary, knowledge base. Story of the project for job interview.
+
+with open(file_name, 'r') as file_txt:
+    for row in file_txt:
+        dig_list = re.findall('\d', row)
+        if dig_list:
+            res_int += int(dig_list[0] +  dig_list[-1])
 print(res_int)
